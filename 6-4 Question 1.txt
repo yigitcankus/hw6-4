@@ -1,0 +1,20 @@
+ABD’deki ailelerin yillik dinlenme/eglenme harcamalarini bilmek istedigimizi varsayalim. Asagidaki modeli tahmin ettik:
+
+    harcamalar = 873 + 0.0012*yillik_gelir + 0.00002*yillik_gelir**2 - 223.57*cocuk_sahibi
+
+Harcama ABD dolari cinsinden eglenme yillik harcamasidir, yillik_gelir ABD dolari cinsinden yillik gelirdir ve cocuk_sahibi 
+çocuklu aileleri gösteren degiskendir. Tahmin edilen katsayilari yorumlayiniz. Yorumlarinizin istatistiksel olarak anlamli 
+oldugundan emin olmak için hangi ek istatistikler verilmelidir? Cevabinizi yazin ve bir Gist'e kaydedin.
+
+Cevap:
+Sabit degeri yorumlarsak, özelliklerimiz yokmus gibi düsündügümüzde bir ailenin yillik harcamasi 873 dolardir.
+Bir ailenin yillik geliri 1 puan? (nasil yorumlayacagimi bilmiyorum, yas olsaydi 1 yas diyebilirdik ama su an 1 dolar arttirmak pek bir sey degistirmez) arttiginda 
+harcamasi 0.0012 oraninda artar. Yillik gelirin karesine baktigimizda, katsayisinin 0.0012nin karekökü olabilcegini düsünmüstüm ama öyle degilmis. 
+Çünkü yillik degerin katsayisi 0.0012 ise yillik gelirin karesinin 0.0012'nin karekökü olabilmesi kulaga mantikli geliyor.
+Neden olmadigini merak ediyorum açikcasi. Yillik gelirinin karesi arttiginda, ailelerin harcamalari 0.00002 oraninda artiyor. 
+Cocuk sahibi sorusunun cevabi evet ya da hayir olur. O yüzden çocuk sayisi 1 arttiginda ya da
+2 arttiginda 223 sayisiyla çarparak bulabilecegimiz bir sonuç yok. Eger çocuk sahibi ise harcamasi 223 artiyor dememiz lazim. Bu durumda 1 çocuklu ve 5 çocuklu 
+ailenin ayni harcamasi olacagi fikri kulaga mantiksiz geliyor. Ayriyetten, 223 sayisinin önündeki - katsayisi kafami karistirdi.
+Neden + olmadigini anlayamadim. 
+
+Degerlerin anlamli olup olmadigini anlamak için p degerlerine bakmamiz gerekiyor. 0.1 den küçükse anlamlidir diyebiliriz.
